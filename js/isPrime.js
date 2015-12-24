@@ -2,15 +2,14 @@
     "use strict";
 
     function isPrime(integer) {
-        var number;
         var i;
         for (i = 2; i < integer; i++) {
-            number = integer / i;
-            if (number === Math.round(number)) {
+            if (integer % i === 0) {
                 return false;
             }
         }
         return true;
     }
+    console.log(isPrime(8));
     console.log(isPrime(19));
 })();
