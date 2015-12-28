@@ -8,6 +8,9 @@
         while (number != userNumber) {
             if (userNumber === null) {
                 break;
+            } else if (isNaN(userNumber)) {
+                alert("It isn't a number!");
+                userNumber = prompt("Enter a number from 0 to 100", 50);
             } else if (number < userNumber) {
                 alert("Our number is lower, try again");
                 userNumber = prompt("Enter a number from 0 to 100", 50);
